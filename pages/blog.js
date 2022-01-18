@@ -1,33 +1,41 @@
-import { useEffect } from 'react'
 import Layout from '../components/Layout'
+import Entrada from '../components/Entrada';
+import Styles from "../styles/Blog.module.css"
 
-const Blog = () => {
+const Blog = ({entradas}) => {
 
-    useEffect(() => {
-        const consultarAPI = async () => {
-            const url = "http://localhost:1337/api/blogs/";
-            const res = await fetch(url);
-            const data = await res.json();
-            console.log(data);
-        }
-        consultarAPI();
-    }, [])
-
-
-
-
+    console.log(entradas);
 
     return (
         <Layout
             pagina="Blog"
         >
-            <p>desde blog js</p>
+            <main className="contenedor">
+                <h2 className='heading'>Blog</h2>
 
-
-
-
+                <div className={Styles.blog}>
+                    {entradas.map(entrada => (
+                        <Entrada
+                            key={entrada.id}
+                            entrada={entrada}
+                        />
+                    ))}
+                </div>
+            </main>
         </Layout>
     )
+}
+
+export async function getServerSideProps() {
+    const url = 'http://localhost:1337/blogs'
+    const res = await fetch(url)
+    const entradas = await res.json()
+    console.log(entradas);
+    return {
+        props: {
+            entradas
+        }
+    }
 }
 
 export default Blog

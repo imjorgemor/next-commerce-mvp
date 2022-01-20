@@ -1,3 +1,10 @@
+works with  node js v14.18.3
+for frontend  npm run dev
+for backend npm run development
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

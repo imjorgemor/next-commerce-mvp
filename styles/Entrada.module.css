@@ -1,6 +1,10 @@
 .contenido {
     padding: 2rem;
+}
 
+.entrada {
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .contenido h3 {
@@ -12,7 +16,7 @@
 
 .fecha {
     font-size: 1.6rem;
-    color: var(--primary)
+    color: var(--primary);
 }
 
 .enlace {
@@ -27,12 +31,12 @@
     border: 2px solid var(--primary);
     padding: 1rem 5rem;
     transition-property: background-color;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 
 .enlace:hover {
     background-color: var(--primary);
-    color: var(--blancop)
+    color: var(--blancop);
 }
 
 .resumen {
@@ -40,4 +44,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
+}
+
+.texto {
+    white-space: pre-wrap;
+    font-size: 1.8rem;
 }

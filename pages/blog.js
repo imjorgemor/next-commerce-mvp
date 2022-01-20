@@ -2,10 +2,10 @@ import Layout from '../components/Layout'
 import Entrada from '../components/Entrada';
 import Styles from "../styles/Blog.module.css"
 
-const Blog = ({entradas}) => {
+const Blog = ({ entradas }) => {
 
-    console.log(entradas);
-
+    
+    
     return (
         <Layout
             pagina="Blog"
@@ -26,8 +26,9 @@ const Blog = ({entradas}) => {
     )
 }
 
+
 export async function getServerSideProps() {
-    const url = 'http://localhost:1337/blogs'
+    const url = `${process.env.API_URL}/blogs`
     const res = await fetch(url)
     const entradas = await res.json()
     console.log(entradas);

@@ -4,7 +4,8 @@ import { formatearFecha } from "../helpers"
 import Styles from "../styles/Entrada.module.css"
 
 const Entrada = ({ entrada }) => {
-    const { titulo, resumen, imagen, published_at, id } = entrada;
+    const { titulo, resumen, imagen, published_at, id, url } = entrada;
+   
 
     return (
         <article>
@@ -13,7 +14,7 @@ const Entrada = ({ entrada }) => {
                 <h3>{titulo}</h3>
                 <p className={Styles.fecha}>{formatearFecha(published_at)}</p>
                 <p className={Styles.resumen}>{resumen}</p>
-                <Link href={`/blog/${id}`}>
+                <Link href={`/blog/${url}`}>
                     <a className={Styles.enlace}>
                         Leer Entrada
                     </a>

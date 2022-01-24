@@ -8,7 +8,6 @@
 * [Features](#features)
 * [Pages & routes](#pages-&-routes)
 * [Roadmap](#roadmap)
-* [Preview and demos](#preview-and-demos)
 
 ## About
 

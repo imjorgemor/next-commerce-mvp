@@ -70,12 +70,12 @@ Using Strapi allows us to manage all the content needed to built this website(pr
 
 ## Pages & routes
 
-``
+```
 index.js "/"
 nopsotros.js "/nosotros"
 blog.js "/blog"
 tienda.js "/tienda
-``
+```
 
 ## Roadmap
 Use this base ecommerce template to develop your own amazing ecommerce platform.

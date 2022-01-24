@@ -1,6 +1,6 @@
 works with  node js v14.18.3
 for frontend  npm run dev
-for backend npm run development
+for backend npm run develop
 
 
 

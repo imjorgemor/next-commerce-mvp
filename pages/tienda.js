@@ -33,6 +33,4 @@ export async function getServerSideProps({ query: { id } }) {
     }
 }
 
-
-
 export default Tienda

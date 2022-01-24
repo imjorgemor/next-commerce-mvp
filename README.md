@@ -1,42 +1,81 @@
-works with  node js v14.18.3
-for frontend  npm run dev
-for backend npm run develop
+# ECOMMERCE MVP Developed with Next
+![logo](https://miro.medium.com/max/1400/1*htbUdWgFQ3a94PMEvBr_hQ.png)
 
 
+* [About](#about)
+* [Built with](#built-with)
+* [Setup](#setup)
+* [Features](#features)
+* [Pages & routes](#pages-&-routes)
+* [Roadmap](#roadmap)
+* [Preview and demos](#preview-and-demos)
+
+## About
+
+Frontend ecommerce template developed with Next.js (React). 
+
+## Built With
+
+This project has built with:
+* [npx create-next-app@latest](https://nextjs.org/) 
+* Strapi v3.6.8 (headless CMS)
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Setup
 
-## Getting Started
+### Prerequisites
 
-First, run the development server:
+This project has been developed with Node Version 14
 
-```bash
-npm run dev
-# or
-yarn dev
+I highly recommend to install the package Node Version Manager to switch your current Node Version into the v14.18.3 release.
+
+### Installation
+
+1. Get a local copy up and run these following simple steps:
+
+Clone the repo
+```sh
+git clone https://github.com/your_username_/Project-Name.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install NPM packages
+```sh
+npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Run the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. To run in developer mode the Strapi backend, open [http://localhost:1337](http://localhost:1337) to view it in the browser.
+```sh
+npm run develop
+   ``` 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Features
+### css responsive design good practices
+Using relative withs and max-widths css properties together with FLEXBOX allowed this project to be responsive from mobile to laptop (max-width: px).
 
-## Learn More
+### Improved UX
+CSS animations to improve the UX.
 
-To learn more about Next.js, take a look at the following resources:
+### Server Side rendering and performance
+Api calls made on the Server Side for eficiency performance purposes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Strapi headless CMS
+Using Strapi allows us to manage all the content needed to built this website(products, collections, blogs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Pages & routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+index.js "/"
+nopsotros.js "/nosotros"
+blog.js "/blog"
+tienda.js "/tienda
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# next-commerce-mvp
+## Roadmap
+Use this base ecommerce template to develop your own amazing ecommerce platforms.

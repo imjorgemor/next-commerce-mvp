@@ -78,4 +78,4 @@ tienda.js "/tienda
 ```
 
 ## Roadmap
-Use this base ecommerce template to develop your own amazing ecommerce platforms.
+Use this base ecommerce template to develop your own amazing ecommerce platform.
